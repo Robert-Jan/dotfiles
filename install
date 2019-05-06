@@ -1,0 +1,68 @@
+#!/bin/bash
+
+# Hide "last login" line when starting a new terminal session
+touch $HOME/.hushlogin
+
+# Install zsh
+echo 'Install oh-my-zsh'
+echo '-----------------'
+rm -rf $HOME/.oh-my-zsh
+curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+# Add global gitignore
+ln -s $HOME/.dotfiles/shell/.global-gitignore $HOME/.global-gitignore
+git config --global core.excludesfile $HOME/.global-gitignore
+
+# Symlink zshrc
+rm $HOME/.zshrc
+ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
+
+# Symlink Sublime Text 3 config
+rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+ln -s $HOME/.dotfiles/sublime/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+
+echo 'Install homebrew'
+echo '----------------'
+echo install homebrew
+sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo 'Install php'
+echo '-----------'
+brew install php@7.3
+brew services start php
+
+echo 'Install imagemagick'
+echo '-------------------'
+brew install imagemagick
+
+echo 'Install Laravel Valet'
+echo '---------------------'
+composer global require laravel/valet
+valet install
+
+echo 'Install MariaDB'
+echo '-------------'
+brew install mariadb
+brew services start mariadb
+
+echo 'Install node'
+echo '-----------'
+brew install node
+
+echo 'Install wget'
+echo '------------'
+brew install wget
+
+echo 'Install bind'
+echo '------------'
+brew install bind
+
+# Install composer
+echo 'Install composer'
+echo '----------------'
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '48e3236262b34d30969dca3c37281b3b4bbe3221bda826ac6a9a62d6444cdb0dcd0615698a5cbe587c3f0fe57a54d8f5') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+sudo mv -f composer.phar /usr/local/bin/composer
