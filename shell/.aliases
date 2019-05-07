@@ -38,3 +38,13 @@ alias mas="php artisan migrate:all --seed"
 alias dbp="php artisan db:procedures"
 
 alias phpunit="vendor/bin/phpunit"
+
+
+#
+# Git
+#
+alias gm="git merge"
+alias gc="git checkout"
+alias gpo="git push origin"
+alias nah='git reset --hard;git clean -df'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
