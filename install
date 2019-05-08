@@ -18,8 +18,8 @@ rm $HOME/.zshrc
 ln -s $HOME/.dotfiles/shell/.zshrc $HOME/.zshrc
 
 # Symlink Sublime Text 3 config
-rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-ln -s $HOME/.dotfiles/sublime/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+rm -rf $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -s $HOME/.dotfiles/sublime $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 echo 'Install homebrew'
 echo '----------------'

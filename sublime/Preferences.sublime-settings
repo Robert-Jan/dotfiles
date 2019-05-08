@@ -1,9 +1,22 @@
 {
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"font_face": "Fira Code",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
 	"font_size": 16,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"theme": "Material-Theme.sublime-theme"
+	"scroll_past_end": true,
+    "caret_style": "phase",
+    "highlight_line": true,
+    "bold_folder_labels": true,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false,
+    "line_padding_bottom": 5,
+    "line_padding_top": 5
 }
