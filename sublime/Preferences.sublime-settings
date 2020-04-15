@@ -1,25 +1,26 @@
 {
-    "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
-    "font_face": "Fira Code",
-    "font_options":
-    [
-        "subpixel_antialias"
-    ],
-    "font_size": 16,
-    "ignored_packages":
-    [
-        "Vintage"
-    ],
-    "scroll_past_end": true,
-    "caret_style": "phase",
-    "highlight_line": true,
-    "bold_folder_labels": true,
-    "theme": "Material-Theme.sublime-theme",
-    "translate_tabs_to_spaces": true,
-    "word_wrap": false,
-    "line_padding_bottom": 5,
-    "line_padding_top": 5,
-    "hot_exit": false,
-    "remember_open_files": false,
-    "open_files_in_new_window": false,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"font_face": "Fira Code",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+	"font_size": 18,
+	"highlight_line": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Rust"
+	],
+	"line_padding_bottom": 5,
+	"line_padding_top": 5,
+	"open_files_in_new_window": false,
+	"remember_open_files": false,
+	"scroll_past_end": true,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false
 }

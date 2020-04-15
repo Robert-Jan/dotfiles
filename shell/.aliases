@@ -46,5 +46,7 @@ alias phpunit="vendor/bin/phpunit"
 alias gm="git merge"
 alias gc="git checkout"
 alias gpo="git push origin"
+alias gac="git add .;git commit -m"
+alias gaa="git add .;git commit --amend --no-edit"
 alias nah='git reset --hard;git clean -df'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"

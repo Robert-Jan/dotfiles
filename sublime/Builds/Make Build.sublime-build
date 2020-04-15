@@ -1,0 +1,5 @@
+{
+    "shell_cmd": "make build",
+    "working_dir": "$folder",
+    "env": {"GOPATH": "/Users/rjvdelst/Libraries/go"},
+}

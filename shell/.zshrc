@@ -2,8 +2,10 @@
 # Path
 #
 export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/Libraries/flutter/bin
-
+export PATH=$PATH:/usr/local/opt/node@12/bin
 
 #
 # ZSH Settings
