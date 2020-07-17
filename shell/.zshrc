@@ -19,6 +19,7 @@ plugins=(
    osx
    git
    composer
+   zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
